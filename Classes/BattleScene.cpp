@@ -96,7 +96,7 @@ bool BattleScene::init() {
     attackNode->setPosition(positionX, positionY);
     enemyBase->setPosition(positionX, positionY);
     playerCursor->setPosition(drawPlayerGrid->getPosition());
-    playerCube->setPosition(positionX / 2, positionY);
+    playerCube->setPosition(positionX / 2 , positionY);
     
     score = 0;
     std::stringstream ss;
@@ -295,7 +295,7 @@ void BattleScene::drawPlayerCube(float deltaTime) {
     double rr = 200.0;
     double theta[8];
     double phi[8];
-    double theta0 = pi/4.0;
+    double theta0 = pi/6.0;
     double phi0 = 0.0;
     // Populate cube angles
     for(int ii = 0; ii < 2; ++ii) {
@@ -346,7 +346,9 @@ void BattleScene::drawPlayerCube(float deltaTime) {
                 playerCube->drawSegment(playerCubeVerticies[ii], playerCubeVerticies[jj], 1.0, playerCubeColor);
             }
         }
+        playerCube->drawSegment(Point(0.0, 0.0), playerCubeVerticies[ii], 1.0, playerCubeColor);
     }
+    return;
 }
 
 void BattleScene::drawPlayerCursor(float deltaTime) {
