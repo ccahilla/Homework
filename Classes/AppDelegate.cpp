@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 #include "BattleScene.h"
+#include "PlotScene.h"
 
 USING_NS_CC;
 
@@ -13,8 +14,8 @@ AppDelegate::AppDelegate() {
 
 }
 
-AppDelegate::~AppDelegate() 
-{
+AppDelegate::~AppDelegate() {
+    
 }
 
 //if you want a different context,just modify the value of glContextAttrs
@@ -42,8 +43,12 @@ bool AppDelegate::applicationDidFinishLaunching() {
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
         glview = GLViewImpl::createWithRect("Homework", Rect(0, 0, designResolutionSize.width, designResolutionSize.height));
+        //glview = GLViewImpl::createWithFullScreen("Homework"); // Be careful, only run if you're sure that no segfaults happen
+
 #else
-        glview = GLViewImpl::create("Homework");
+        //glview = GLViewImpl::create("Homework");
+        glview = GLViewImpl::createWithFullScreen("Homework"); // Be careful, only run if you're sure that no segfaults happen
+        //glview = GLViewImpl::initWithFullScreen("Homework");
 #endif
         director->setOpenGLView(glview);
     }
@@ -76,7 +81,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = BattleScene::createScene();
+    auto scene = PlotScene::createScene();
 
     // run
     director->runWithScene(scene);

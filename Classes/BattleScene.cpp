@@ -7,14 +7,18 @@
 //
 
 #include "BattleScene.h"
+#include "GridLayer.h"
 
 USING_NS_CC;
 
 cocos2d::Scene* BattleScene::createScene()
 {
     auto scene = Scene::create();
-    auto layer = BattleScene::create();
-    scene->addChild(layer);
+    auto playerLayer = BattleScene::create();
+    auto gridLayer1 = GridLayer::create();
+    scene->addChild(playerLayer, 0);
+    scene->addChild(gridLayer1 , 200);
+    playerLayer->gridLayer = gridLayer1;
     
     return scene;
 }
@@ -87,6 +91,11 @@ bool BattleScene::init() {
     yMax = this->getBoundingBox().getMaxY();
     xMin = this->getBoundingBox().getMinX();
     yMin = this->getBoundingBox().getMinY();
+    
+//    cocos2d::log("\nBattle Scene");
+//    cocos2d::log("xMax = %d, yMax = %d", xMax, yMax);
+//    cocos2d::log("xMin = %d, yMin = %d", xMin, yMin);
+//    cocos2d::log("xCenter = %d, yCenter = %d", xCenter, yCenter);
     
     positionX = xCenter;
     positionY = yCenter;
@@ -224,6 +233,10 @@ void BattleScene::update(float deltaTime) {
     
     if(isAnyKeyPressed()) {
         performKeyActions(deltaTime);
+    }
+    
+    if( totalTime < gridLayer->getGridDrawingTime() ) {
+        gridLayer->update(deltaTime);
     }
     
     //    double friction = 0.95;

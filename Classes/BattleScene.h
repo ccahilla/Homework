@@ -1,6 +1,7 @@
 #pragma once
 
 #include "cocos2d.h"
+#include "GridLayer.h"
 #include <map>
 
 class BattleScene : public cocos2d::Layer
@@ -32,6 +33,8 @@ public:
     
 private:
     const double pi = 3.14159265359;
+    
+    GridLayer* gridLayer;
     
     cocos2d::DrawNode* drawPlayerGrid;
     cocos2d::DrawNode* healthBar;

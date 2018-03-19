@@ -60,6 +60,20 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		956085F31E4AB1FC00A660C0 /* BattleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 956085F11E4AB1FC00A660C0 /* BattleScene.cpp */; };
+		956085F41E4AB1FC00A660C0 /* BattleScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 956085F11E4AB1FC00A660C0 /* BattleScene.cpp */; };
+		9561D43E205F69B000E8992C /* HexSpace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D43C205F69B000E8992C /* HexSpace.cpp */; };
+		9561D43F205F69B000E8992C /* HexSpace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D43C205F69B000E8992C /* HexSpace.cpp */; };
+		9561D442205F70EE00E8992C /* MainLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D440205F70EE00E8992C /* MainLoop.cpp */; };
+		9561D443205F70EE00E8992C /* MainLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D440205F70EE00E8992C /* MainLoop.cpp */; };
+		9561D446205F710A00E8992C /* ProcessInputs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D444205F710A00E8992C /* ProcessInputs.cpp */; };
+		9561D447205F710A00E8992C /* ProcessInputs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D444205F710A00E8992C /* ProcessInputs.cpp */; };
+		9561D44A205F712600E8992C /* DrawGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D448205F712600E8992C /* DrawGame.cpp */; };
+		9561D44B205F712600E8992C /* DrawGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9561D448205F712600E8992C /* DrawGame.cpp */; };
+		956D1B351EE50CF10098AE8C /* GridLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 956D1B331EE50CF10098AE8C /* GridLayer.cpp */; };
+		956D1B361EE50CF10098AE8C /* GridLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 956D1B331EE50CF10098AE8C /* GridLayer.cpp */; };
+		95F7975620489C8500066F3D /* PlotScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F7975420489C8500066F3D /* PlotScene.cpp */; };
+		95F7975720489C8500066F3D /* PlotScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95F7975420489C8500066F3D /* PlotScene.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -154,6 +168,20 @@
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		956085F11E4AB1FC00A660C0 /* BattleScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BattleScene.cpp; sourceTree = "<group>"; };
+		956085F21E4AB1FC00A660C0 /* BattleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleScene.h; sourceTree = "<group>"; };
+		9561D43C205F69B000E8992C /* HexSpace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HexSpace.cpp; sourceTree = "<group>"; };
+		9561D43D205F69B000E8992C /* HexSpace.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HexSpace.hpp; sourceTree = "<group>"; };
+		9561D440205F70EE00E8992C /* MainLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainLoop.cpp; sourceTree = "<group>"; };
+		9561D441205F70EE00E8992C /* MainLoop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainLoop.hpp; sourceTree = "<group>"; };
+		9561D444205F710A00E8992C /* ProcessInputs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProcessInputs.cpp; sourceTree = "<group>"; };
+		9561D445205F710A00E8992C /* ProcessInputs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProcessInputs.hpp; sourceTree = "<group>"; };
+		9561D448205F712600E8992C /* DrawGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawGame.cpp; sourceTree = "<group>"; };
+		9561D449205F712600E8992C /* DrawGame.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DrawGame.hpp; sourceTree = "<group>"; };
+		956D1B331EE50CF10098AE8C /* GridLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GridLayer.cpp; sourceTree = "<group>"; };
+		956D1B341EE50CF10098AE8C /* GridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridLayer.h; sourceTree = "<group>"; };
+		95F7975420489C8500066F3D /* PlotScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PlotScene.cpp; sourceTree = "<group>"; };
+		95F7975520489C8500066F3D /* PlotScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlotScene.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -299,6 +327,20 @@
 			children = (
 				46880B8419C43A87006E1F66 /* AppDelegate.cpp */,
 				46880B8519C43A87006E1F66 /* AppDelegate.h */,
+				9561D440205F70EE00E8992C /* MainLoop.cpp */,
+				9561D441205F70EE00E8992C /* MainLoop.hpp */,
+				9561D444205F710A00E8992C /* ProcessInputs.cpp */,
+				9561D445205F710A00E8992C /* ProcessInputs.hpp */,
+				9561D448205F712600E8992C /* DrawGame.cpp */,
+				9561D449205F712600E8992C /* DrawGame.hpp */,
+				9561D43C205F69B000E8992C /* HexSpace.cpp */,
+				9561D43D205F69B000E8992C /* HexSpace.hpp */,
+				95F7975420489C8500066F3D /* PlotScene.cpp */,
+				95F7975520489C8500066F3D /* PlotScene.h */,
+				956D1B331EE50CF10098AE8C /* GridLayer.cpp */,
+				956D1B341EE50CF10098AE8C /* GridLayer.h */,
+				956085F11E4AB1FC00A660C0 /* BattleScene.cpp */,
+				956085F21E4AB1FC00A660C0 /* BattleScene.h */,
 				46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */,
 				46880B8719C43A87006E1F66 /* HelloWorldScene.h */,
 			);
@@ -496,7 +538,14 @@
 			files = (
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				9561D43E205F69B000E8992C /* HexSpace.cpp in Sources */,
+				956D1B351EE50CF10098AE8C /* GridLayer.cpp in Sources */,
+				9561D446205F710A00E8992C /* ProcessInputs.cpp in Sources */,
+				9561D442205F70EE00E8992C /* MainLoop.cpp in Sources */,
+				95F7975620489C8500066F3D /* PlotScene.cpp in Sources */,
+				956085F31E4AB1FC00A660C0 /* BattleScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
+				9561D44A205F712600E8992C /* DrawGame.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 			);
@@ -507,8 +556,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				46880B8919C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				95F7975720489C8500066F3D /* PlotScene.cpp in Sources */,
 				503AE10517EB98FF00D1A890 /* main.cpp in Sources */,
+				9561D44B205F712600E8992C /* DrawGame.cpp in Sources */,
+				9561D43F205F69B000E8992C /* HexSpace.cpp in Sources */,
+				9561D443205F70EE00E8992C /* MainLoop.cpp in Sources */,
+				956085F41E4AB1FC00A660C0 /* BattleScene.cpp in Sources */,
 				46880B8B19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
+				9561D447205F710A00E8992C /* ProcessInputs.cpp in Sources */,
+				956D1B361EE50CF10098AE8C /* GridLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
